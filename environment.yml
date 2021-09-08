@@ -1,1 +1,17 @@
+---
 name: py39
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - pre_commit
+  - python=3.9
+  - scipy
+  - statsmodels
+  - tox
