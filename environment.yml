@@ -12,6 +12,7 @@ dependencies:
   - pip
   - pre_commit
   - python=3.9
+  - seaborn
   - scipy
   - statsmodels
   - tox
