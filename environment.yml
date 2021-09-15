@@ -12,6 +12,7 @@ dependencies:
   - pip
   - pre_commit
   - python=3.9
+  - pytest=6.2.4
   - seaborn
   - scipy
   - statsmodels
