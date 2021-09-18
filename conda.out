@@ -1,0 +1,29 @@
+ 1926  conda --version
+ 1951  vi ~/miniconda3/etc/profile.d/conda.sh 
+ 1959  conda
+ 1963  conda
+ 1968  conda init
+ 1969  conda env remove
+ 1970  conda deactivate
+ 1971  conda env remove
+ 1976  chmod 755 Miniconda3-py39_4.10.3-Linux-x86_64.sh 
+ 1977  ./Miniconda3-py39_4.10.3-Linux-x86_64.sh --help
+ 1978  ./Miniconda3-py39_4.10.3-Linux-x86_64.sh -u
+ 1982  ./Miniconda3-py39_4.10.3-Linux-x86_64.sh -u 
+ 1984  du -sh ~/miniconda3/
+ 1985  rm -rf ~/miniconda3/
+ 1989  ./Miniconda3-py39_4.10.3-Linux-x86_64.sh 
+ 1991  eval "$(/home/choman/miniconda3/bin/conda shell.bash)"
+ 1992  conda init
+ 1993  /home/choman/miniconda3/bin/conda  init
+ 1994  sudo conda config --set auto_activate_base false
+ 1995  ~/miniconda3/bin/conda config --set auto_activate_base false
+ 2007  conda activate
+ 2008  conda activate py39
+ 2016  conda update -f environment.yml 
+ 2017  conda update --file environment.yml 
+ 2020  conda env upgrade -f environment.yml 
+ 2021  conda env update  -f environment.yml 
+ 2023  conda install tox
+ 2027  git add .envrc conda.md 
+ 2037  history  | grep conda > conda.out
