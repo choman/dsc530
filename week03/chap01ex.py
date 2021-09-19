@@ -14,14 +14,38 @@ import sys
 import nsfg
 import thinkstats2
 
+FEMRESP_DAT="2002FemResp.dat.gz"
+FEMRESP_DCT="2002FemResp.dct"
+
+def read_data(dct=FEMRESP_DCT, dat=FEMRESP_DAT, nrows=None):
+    dct = thinkstats2.ReadStataDct(dct)
+    df = dct.ReadFixedWidth(dat, compression='gzip', nrows=nrows)
+    return df
+
+
+def process_data(data):
+    preg = nsfg.ReadFemPreg()
+
+    # make the preg map
+    preg_map = nsfg.MakePregMap(preg)
+
+    # loop through pregnum data
+    for index, pregnum in data.pregnum.items():
+        caseid = data.caseid[index]
+        print(f"{caseid = }: {pregnum = }")
+
 
 def main(script):
     """Tests the functions in this module.
 
     script: string script name
-    """
     print('%s: All tests passed.' % script)
+    """
 
+
+    df = read_data()
+    process_data(df)
+    
 
 if __name__ == '__main__':
     main(*sys.argv)
