@@ -29,7 +29,7 @@ def process_data(data):
     # make the preg map
     preg_map = nsfg.MakePregMap(preg)
 
-    # loop through pregnum data
+    # loop through pregnum data and print results
     for index, pregnum in data.pregnum.items():
         caseid = data.caseid[index]
         print(f"{caseid = }: {pregnum = }")
