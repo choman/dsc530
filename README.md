@@ -21,3 +21,4 @@ Thanks to github markdown, these links are technically broken.
 - [Week 05](week05)
 - [Week 06] - Nothing Due
 - [Week 07](week07)
+- [Week 08](week08)
